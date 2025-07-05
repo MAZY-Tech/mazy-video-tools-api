@@ -31,3 +31,18 @@ docker compose up
 * `make build` – compila o JAR
 * `make docker-build` – gera a imagem Docker
 * `make push` – envia a imagem para o ECR
+
+---
+
+## Qualidade do Código
+
+### Testes unitários
+![Testes Unitários](./assets/testes.png)
+
+### SonarQube
+![Sonar_1](./assets/sonar.png)
+
+### Cobertura de Testes
+![Cobertura de Testes](./assets/jacoco.png)
+
+---
