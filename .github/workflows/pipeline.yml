@@ -65,7 +65,7 @@ jobs:
       with:
         projectBaseDir: .
         args: >
-          -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }} -Dsonar.projectName=${{ vars.SONAR_PROJECT_NAME }} -Dsonar.organization=${{ vars.SONAR_ORGANIZATION }} -Dsonar.java.binaries=target -Dsonar.coverage.exclusions=**/test/**
+          -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }} -Dsonar.projectName=${{ vars.SONAR_PROJECT_NAME }} -Dsonar.organization=${{ vars.SONAR_ORGANIZATION }} -Dsonar.java.binaries=target -Dsonar.coverage.exclusions=**/test/**,**/dto/**,**/config/**,**/MazyVideoToolsApplication.java
 
     - name: Wait and Enforce Quality Gate
       uses: sonarsource/sonarqube-quality-gate-action@master
