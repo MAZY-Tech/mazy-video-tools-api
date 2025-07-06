@@ -1,6 +1,6 @@
 ACCOUNT_ID := $(shell aws sts get-caller-identity --query Account --output text)
 AWS_REGION ?= $(shell aws configure get region)
-REPOSITORY ?= mazy-video-tools
+REPOSITORY ?= mazy-video-tools-api
 IMAGE_TAG  ?= latest
 ECR_URI    := $(ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPOSITORY):$(IMAGE_TAG)
 
